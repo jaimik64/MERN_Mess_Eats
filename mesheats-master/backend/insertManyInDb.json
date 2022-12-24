@@ -1,0 +1,22 @@
+[
+    {
+        "_id": "62fb6369906068517aab5e50",
+        "name": "Sagar",
+        "email": "sagarjk50@gmail.com",
+        "mobile": "7879845461",
+        "encry_password": "300e83cabaa4c90be03f84a146a1fafb0315164dc1d162b9fca9e71d72a6b6a3",
+        "salt": "e409cd70-1d45-11ed-8362-0117e4e48076",
+        "orders": [],
+        "role": 0,
+        "address": []
+    },
+    {
+
+    },
+    {
+
+    },
+    {
+        
+    }
+]

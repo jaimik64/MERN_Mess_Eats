@@ -1,0 +1,366 @@
+{
+	"info": {
+		"_postman_id": "4b3df126-e4f8-48b2-9156-3fd48e179140",
+		"name": "Mesheats",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16597385"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Signup",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"js\",\r\n    \"email\": \"jaimikchauhan10@gmail.com\",\r\n    \"password\": \"123456789\",\r\n    \"mobile\": \"7899845262\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Signin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"sagarjk50@gmail.com\",\r\n    \"password\": \"sagarDhara\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/auth/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Signout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/auth/signout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"signout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MailTesting",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/auth/test",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"test"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MeshUser",
+			"item": [
+				{
+					"name": "Signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Jaik\",\r\n    \"email\": \"jamikc@gmail.com\",\r\n    \"mobile\": \"8061563076\",\r\n    \"password\": \"123456789\",\r\n    \"location\": \"Behind Nirma University, Malabar Road\",\r\n    \"city\": \"Ahmedabad\",\r\n    \"delivery\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/mesh/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"mesh",
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Signin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"jamikc@gmail.com\",\r\n    \"password\": \"123456789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/mesh/auth/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"mesh",
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Signout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/mesh/auth/signout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"mesh",
+								"auth",
+								"signout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmVmNjY5OWFiMGY3NmYwYzYxYTkxMzMiLCJpYXQiOjE2NjAzMTY3OTN9.1KwHC8-lPrTFU9RkfECcGjF55f6RGxYp8NZtca28NMY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pincode\": \"384001\",\r\n    \"address\": \"5, D.V.Park Society, Dhobighat Road\",\r\n    \"city\": \"Mehsana\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/users/addAddress",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"users",
+								"addAddress"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Add Address",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmZiMDA3MTQ2Y2Q3YjljOWJmN2IxNGMiLCJpYXQiOjE2NjA2MTcwOTl9.7ZjmnM3x_UIDqNQsCc4Y6DbNEfKs-GdSqth8m_jWm7M",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pincode\": \"384001\",\r\n    \"address\": \"5, D.V.Park Society, Dhobighat Road\",\r\n    \"city\": \"Mehsana\",\r\n    \"user\": \"62fb007146cd7b9c9bf7b14c\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/users/addAddress/62fb007146cd7b9c9bf7b14c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"users",
+								"addAddress",
+								"62fb007146cd7b9c9bf7b14c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Update Address",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmVmNjY5OWFiMGY3NmYwYzYxYTkxMzMiLCJpYXQiOjE2NjAzNjk5OTh9.xNsAkdj3Zl9XtcXRcoljIadC0fa2EmAy_c5Ll0VrO64",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pincode\": \"384002\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/users/updateAddress/62ef6699ab0f76f0c61a9133/62f7745dcb2055bd467081b7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"users",
+								"updateAddress",
+								"62ef6699ab0f76f0c61a9133",
+								"62f7745dcb2055bd467081b7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove User Address",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmZiMDA3MTQ2Y2Q3YjljOWJmN2IxNGMiLCJpYXQiOjE2NjA2MTcwOTl9.7ZjmnM3x_UIDqNQsCc4Y6DbNEfKs-GdSqth8m_jWm7M",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/users/removeAddress/62fb007146cd7b9c9bf7b14c/62fb01e846cd7b9c9bf7b158",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"users",
+								"removeAddress",
+								"62fb007146cd7b9c9bf7b14c",
+								"62fb01e846cd7b9c9bf7b158"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
