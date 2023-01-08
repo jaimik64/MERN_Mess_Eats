@@ -1,3 +1,4 @@
 # MERN_Mess_Eats
-
-<iframe width="1033" height="551" src="https://www.youtube.com/embed/xqnFbapfZYQ" title="Mess Eats - Project Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=xqnFbapfZYQ" target="_blank">
+  <img src="http://img.youtube.com/vi/xqnFbapfZYQ/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" />
+</a>
